@@ -1,5 +1,13 @@
 package com.nvilla.calories.config;
 
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+import javax.servlet.MultipartConfigElement;
+
+import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
@@ -20,6 +28,12 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         return new MultipartConfigElement("");
     }
 
+//    @Override
+//    public void addViewControllers(final ViewControllerRegistry registry) {
+//        super.addViewControllers(registry);
+//        registry.addViewController("/login").setViewName(AbstractController.LOGIN_TEMPLATE);
+//    }
+    
     @Override
     public void addViewControllers(final ViewControllerRegistry registry) {
         super.addViewControllers(registry);

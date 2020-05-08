@@ -21,16 +21,16 @@ public final class MyGoals {
     @Column(name = "id", columnDefinition = "INT")
     private Integer id;
 	
-	@Column(name = "kilograms", columnDefinition = "double", nullable = false)
+	@Column(name = "kilograms", nullable = false)
 	private Double kilograms;
 	
-	@Column(name = "carbohydrates", columnDefinition = "double", nullable = false)
+	@Column(name = "carbohydrates", nullable = false)
 	private Double carbohydrates;
 	
-	@Column(name = "fat", columnDefinition = "double", nullable = false)
+	@Column(name = "fat", nullable = false)
 	private Double fat;
 	
-	@Column(name = "protein", columnDefinition = "double", nullable = false)
+	@Column(name = "protein", nullable = false)
 	private Double protein;
 	
 	@ManyToOne

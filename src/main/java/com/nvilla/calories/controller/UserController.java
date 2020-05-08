@@ -50,7 +50,7 @@ public final class UserController extends AbstractController{
 	
 	@PostMapping(value = "/api/user/save")
 	@ResponseBody
-	 public final String aveProfile(
+	 public final String saveProfile(
             @RequestBody final Map<String, Object> payload,
             final HttpServletRequest request
     ) throws IOException {
@@ -92,7 +92,7 @@ public final class UserController extends AbstractController{
     public final String ControllerTest() {
     	
     	
-    	 String resultMessage = "artur";
+    	 String resultMessage = "calories";
     	 return resultMessage;
     
 
